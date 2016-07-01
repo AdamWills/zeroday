@@ -1,0 +1,16 @@
+/*
+ Theme Name:   Zero Day
+ Theme URI:    http://zeroday.ca/
+ Description:  Child theme of filmmaker made for ZeroDay Productions
+ Author:       Adam Wills
+ Author URI:   https://adamwills.io
+ Template:     filmmaker
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  zero-day
+*/
+
+.fl-title { margin-bottom: 2rem; }
+
+.post-item .tab-p-content .tab-p-desc .view:before { content: none; }
