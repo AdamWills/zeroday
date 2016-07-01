@@ -78,7 +78,7 @@
                         <li>
                             <?php echo filmmaker_getPostViews(get_the_ID()); ?>
                         </li>
-                        <li><?php esc_html_e('VIEW', 'filmmaker' ); ?></li>
+                        <li><?php esc_html_e('VIEWS', 'filmmaker' ); ?></li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                     foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
                     $args=array(
                     'post__not_in' => array($post->ID),
-                    'posts_per_page'=> 6,
+                    'posts_per_page'=> 3,
                     );
                     $my_query = new wp_query( $args );
                     if( $my_query->have_posts() ) {?>

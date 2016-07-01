@@ -11,6 +11,12 @@
  Text Domain:  zero-day
 */
 
+body { font-size: 16px; }
+
 .fl-title { margin-bottom: 2rem; }
 
-.post-item .tab-p-content .tab-p-desc .view:before { content: none; }
+.tab-p-content .tab-p-desc .view:before { content: none; }
+
+.pro-tab-item { margin-top: 0; }
+
+#form-contact .form .white-desc, #form-contact2 .form .white-desc, #addres .form .white-desc, #addres .form .white-desc { font-size: initial; }
