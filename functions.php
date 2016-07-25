@@ -9,3 +9,15 @@ function my_comments_open( $open, $post_id ) {
   return false;
 }
 add_filter( 'comments_open', 'my_comments_open', 10, 2 );
+
+function custom_category_sort( $a, $b ) {
+  if ($a->term_id === 1)
+    return -1;
+  if ($b->term_id === 1)
+    return 1;
+  if ($a->term_id === 6)
+    return -1;
+  if ($b->term_id === 6)
+    return 1;
+  return 1;
+}

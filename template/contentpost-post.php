@@ -161,7 +161,7 @@
        $args=array(
        'post__not_in' => array($post->ID),
        'posts_per_page'=> 3,
-       'orderby'=>'rand'
+       'orderby'=>'date'
        );
        $my_query = new wp_query( $args );
        if( $my_query->have_posts() ) {?>

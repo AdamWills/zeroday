@@ -20,3 +20,9 @@ body { font-size: 16px; }
 .pro-tab-item { margin-top: 0; }
 
 #form-contact .form .white-desc, #form-contact2 .form .white-desc, #addres .form .white-desc, #addres .form .white-desc { font-size: initial; }
+
+.page-template-template-blog-video3 .tab-pane {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

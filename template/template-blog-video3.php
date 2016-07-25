@@ -4,6 +4,7 @@
 */
 get_header();
  ?>
+
     <section class="pro-tab-item">
         <div class="container">
             <div class="row">
@@ -19,7 +20,8 @@ get_header();
                         <ul class="tabs">
                             <li class=""><a href="#all"  role="tab" data-fillter="all"><?php esc_html_e('ALL','filmmaker'); ?></a></li>
                             <?php
-                                $categories = get_categories( );
+                                $categories = get_categories( array( 'exclude' =>  39, 'hide_empty' => false ) );
+                                usort( $categories, 'custom_category_sort' );
                                 foreach ( $categories as $category ){
                                   echo '
                             <li><a href="#'.$category->slug .'" data-fillter="'.$category->slug .'">' . $category->name . '</a></li>
@@ -37,11 +39,12 @@ get_header();
 
                         <div class="tab-pane fade-in active" id="all">
                             <?php
+                                $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
                                 $list = array(
                                     'posts_type' => 'post',
                                     'order' => 'DESC',
                                     'paged' => $paged,
-                                    'posts_per_page' => 10,
+                                    'posts_per_page' => 9,
                                     'tax_query' => array( array(
                                         'taxonomy' => 'post_format',
                                         'field' => 'slug',
