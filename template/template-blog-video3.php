@@ -44,7 +44,7 @@ get_header();
                                     'posts_type' => 'post',
                                     'order' => 'DESC',
                                     'paged' => $paged,
-                                    'posts_per_page' => 9,
+                                    'posts_per_page' => -1,
                                     'tax_query' => array( array(
                                         'taxonomy' => 'post_format',
                                         'field' => 'slug',
