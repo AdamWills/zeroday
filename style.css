@@ -26,3 +26,89 @@ body { font-size: 16px; }
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.date-post {
+  background-color: white;
+}
+
+.detail-blog-1 {
+    margin: 0;
+}
+
+.new .title-gray {
+  padding-top: 50px;
+}
+
+.f-home1 {
+  padding-top: 0;
+}
+
+.footer-landing {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .gray-desc {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .detail-blog-1 .img-post-detail {
+    padding: 0;
+  }
+}
+
+.tabs {
+  position: relative;
+  min-height: initial;
+}
+
+.dff-container .dff-text,
+.fl-title .fl-title-big,
+.title-bold,
+.title-bold-white,
+.title-post,
+.desc-more,
+.title-desc,
+.txtletter,
+.relate-post li h3,
+.about .name-bloger,
+.title-time,
+.list-film-name a,
+.film-type2 ul li .list-film-name,
+.tab-p-name a,
+.tab-p-name2 a,
+.fl-title-medium,
+.short-text-img-fl,
+.character-item .character-content .team-name,
+.character-item .charater-desc,
+.fl-gallery-detail .fl-gallery-view-detail .ms-slide p
+.ingred .ingred-box .ingred-list li .gg,
+.detail-blog-1 .desc-author .txt .beau,
+.box-text404 .text-404,
+.cd-timeline-content,
+#issues li .date-group,
+.discover-page-name,
+.testimonial-quote,
+.testimonial-quote:before,
+.service-content .service-name,
+.service-content .service-name,
+.blog-item .blog-name,
+.content-blog-item,
+.template-video-fl .video_info,
+.crew-name,
+.crew-container .crew-content2 .crew-name2,
+.tab-container .tab-content .crew-name,
+.discover-item .discover-name,
+.event-item,
+.event-item .e-1500,
+.film-odd-content .p-name a,
+.wrapper-gallery-detail .modal-content .m-image .g-detail-desc,
+.g-detail-slider .ms-slide p,
+.list-cc-box li a,
+.director_img_cover .director_detail_name,
+.director-item .director-container li .director-content .director-list .director-name,
+.team-content .team-name {
+  font-family: 'Oswald', sans-serif;
+}

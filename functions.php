@@ -21,3 +21,9 @@ function custom_category_sort( $a, $b ) {
     return 1;
   return 1;
 }
+
+function custom_fonts() {
+  wp_dequeue_style( 'fonts-Playfair_Display' );
+  wp_enqueue_style( 'fonts-Oswald', 'https://fonts.googleapis.com/css?family=Oswald:400,700' );
+}
+add_action( 'wp_enqueue_scripts', 'custom_fonts', 20 );
